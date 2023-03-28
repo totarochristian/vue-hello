@@ -14,9 +14,18 @@
 </head>
 <body>
     <!-- Define the container of the vue app -->
-    <div id="app">
+    <div id="app" class="container">
         <h1>{{ title }}</h1>
-        <img :src="imageSrc" :alt="imageAlt">
+        <div id="carousel" class="carousel">
+            <div class="slider">
+                <img id="sliderImg" src="./assets/img/01.webp" alt="Immagine dello slider">
+                <p id="sliderTitle"></p>
+            </div>
+            <div class="preview">
+                <button id="btnPrev"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                <button id="btnNext"><i class="fa-solid fa-circle-arrow-down"></i></button>
+            </div>
+        </div>
     </div>
 
     <!-- Include custom JS file -->
