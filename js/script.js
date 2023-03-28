@@ -3,6 +3,9 @@ const app = createApp({
   data() {
     return {
       title: "Carosello di immagini",
+      sliderTitle: '',
+      sliderImage: '',
+      sliderAlt: '',
       sliderCurrentIndex: 0,
       sliderPrevIndex: 0,
       intervalSlider: [],
@@ -64,15 +67,10 @@ const app = createApp({
         .classList.add("activeImage");
     },
     UpdateSlideShowed() {
-      document
-        .getElementById("sliderImg")
-        .setAttribute(
-          "src",
-          "./assets/img/" + this.sliderImages[this.sliderCurrentIndex].img
-        );
-      document.getElementById("sliderTitle").innerText =
-        this.sliderImages[this.sliderCurrentIndex].title;
-      this.UpdatePreviewSlideShowed();
+        this.sliderImage = "./assets/img/" + this.sliderImages[this.sliderCurrentIndex].img;
+        this.sliderTitle = this.sliderImages[this.sliderCurrentIndex].title;
+        this.sliderAlt = 'Tema della foto: ' + this.sliderImages[this.sliderCurrentIndex].title;
+        this.UpdatePreviewSlideShowed();
     },
     PrevSlide() {
       this.sliderPrevIndex = this.sliderCurrentIndex;
