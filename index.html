@@ -22,8 +22,8 @@
                 <p id="sliderTitle"></p>
             </div>
             <div class="preview">
-                <button id="btnPrev"><i class="fa-solid fa-circle-arrow-up"></i></button>
-                <button id="btnNext"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                <button id="btnPrev" @click="sliderCurrentIndex++"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                <button id="btnNext" @click="NextSlide()"><i class="fa-solid fa-circle-arrow-down"></i></button>
             </div>
         </div>
     </div>
