@@ -117,5 +117,13 @@ const app = createApp({
   mounted() {
     this.AddPreviewImages();
     this.UpdateSlideShowed();
+    document.getElementById("btnPrev").addEventListener("click",this.PrevSlide);
+    document.getElementById("btnNext").addEventListener("click",this.NextSlide);
+
+    document.getElementById("carousel").addEventListener("wheel", this.MouseWheelScroll,{passive: true});
+
+    window.addEventListener("load",this.StartAutoCarousel);
+    document.getElementById("carousel").addEventListener("mouseout",this.StartAutoCarousel);
+    document.getElementById("carousel").addEventListener("mouseover",this.StopAutoCarousel);
   },
 }).mount("#app");
