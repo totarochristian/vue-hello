@@ -3,7 +3,8 @@ const app = createApp({
     data() {
         return{
             title: 'Vue hello',
-            imageName: 'bonfire.jpg'
+            imageName: 'bonfire.jpg',
+            imageAlt: 'falò'
         }
     }
 }).mount('#app');
