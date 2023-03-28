@@ -3,7 +3,7 @@ const app = createApp({
     data() {
         return{
             title: 'Vue hello',
-            imageName: 'bonfire.jpg',
+            imageSrc: './images/bonfire.jpg',
             imageAlt: 'falò'
         }
     }
