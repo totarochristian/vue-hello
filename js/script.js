@@ -94,8 +94,8 @@ const app = createApp({
     },
     MouseWheelScroll(event) {
       const delta = Math.sign(event.deltaY);
-      if (delta == 1) NextSlide();
-      else if (delta == -1) PrevSlide();
+      if (delta == 1) this.NextSlide();
+      else if (delta == -1) this.PrevSlide();
     },
     StartAutoCarousel() {
       this.intervalSlider = setInterval(this.NextSlide, 3000);
@@ -106,8 +106,6 @@ const app = createApp({
   },
   mounted() {
     this.UpdateSlideShowed();
-
-    document.getElementById("carousel").addEventListener("wheel", this.MouseWheelScroll,{passive: true});
 
     window.addEventListener("load",this.StartAutoCarousel);
     document.getElementById("carousel").addEventListener("mouseout",this.StartAutoCarousel);

@@ -16,7 +16,7 @@
     <!-- Define the container of the vue app -->
     <div id="app" class="container">
         <h1>{{ title }}</h1>
-        <div id="carousel" class="carousel">
+        <div id="carousel" class="carousel" @wheel="MouseWheelScroll">
             <div class="slider">
                 <img id="sliderImg" :src="sliderImage" :alt="sliderAlt">
                 <p id="sliderTitle">{{ sliderTitle }}</p>
