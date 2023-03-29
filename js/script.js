@@ -106,8 +106,6 @@ const app = createApp({
   },
   mounted() {
     this.UpdateSlideShowed();
-    document.getElementById("btnPrev").addEventListener("click",this.PrevSlide);
-    document.getElementById("btnNext").addEventListener("click",this.NextSlide);
 
     document.getElementById("carousel").addEventListener("wheel", this.MouseWheelScroll,{passive: true});
 

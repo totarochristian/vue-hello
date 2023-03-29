@@ -22,8 +22,8 @@
                 <p id="sliderTitle">{{ sliderTitle }}</p>
             </div>
             <div class="preview">
-                <button id="btnPrev"><i class="fa-solid fa-circle-arrow-up"></i></button>
-                <button id="btnNext"><i class="fa-solid fa-circle-arrow-down"></i></button>
+                <button id="btnPrev" @click="PrevSlide"><i class="fa-solid fa-circle-arrow-up"></i></button>
+                <button id="btnNext" @click="NextSlide"><i class="fa-solid fa-circle-arrow-down"></i></button>
                 <div v-for="(image, index) in sliderImages" :key="index" :id="'previewImg_' + index" :class="image.class" :style="'height: ' + (100 / sliderImages.length) + '%'">
                     <img :src="'./assets/img/' + image.img" :alt="'Immagine' + index + 'della preview'">
                 </div>
