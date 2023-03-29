@@ -8,7 +8,7 @@ const app = createApp({
       sliderAlt: '',
       sliderCurrentIndex: 0,
       sliderPrevIndex: 0,
-      intervalSlider: [],
+      intervalSlider: 0,
       sliderImages: [
         {
           img: "01.webp",
@@ -107,8 +107,5 @@ const app = createApp({
   mounted() {
     this.UpdateSlideShowed();
     this.StartAutoCarousel();
-    
-    document.getElementById("carousel").addEventListener("mouseout",this.StartAutoCarousel);
-    document.getElementById("carousel").addEventListener("mouseover",this.StopAutoCarousel);
   },
 }).mount("#app");
