@@ -83,6 +83,10 @@
 .preview button#btnNext{
     bottom: 0;
 }
+h1{
+    padding: 1rem;
+}
+
 @media screen and (max-width: 610px){
     .carousel{
         width: 100%;
