@@ -59,12 +59,8 @@ const app = createApp({
   },
   methods: {
     UpdatePreviewSlideShowed() {
-      document
-        .getElementById("previewImg_" + this.sliderPrevIndex)
-        .classList.remove("activeImage");
-      document
-        .getElementById("previewImg_" + this.sliderCurrentIndex)
-        .classList.add("activeImage");
+      document.getElementById("previewImg_" + this.sliderPrevIndex).classList.remove("activeImage");
+      document.getElementById("previewImg_" + this.sliderCurrentIndex).classList.add("activeImage");
     },
     UpdateSlideShowed() {
         this.sliderImage = "./assets/img/" + this.sliderImages[this.sliderCurrentIndex].img;
@@ -88,16 +84,8 @@ const app = createApp({
     AddPreviewImages() {
       const preview = document.getElementsByClassName("preview")[0];
       for (let i = 0; i < this.sliderImages.length; i++) {
-        preview.innerHTML +=
-          '<div id="previewImg_' +
-          i +
-          '" class="imgCont"><img src="./assets/img/' +
-          this.sliderImages[i].img +
-          '" alt="Immagine ' +
-          i +
-          ' della preview"></div>';
-        document.getElementById("previewImg_" + i).style.height =
-          "" + 100 / this.sliderImages.length + "%";
+        preview.innerHTML += '<div id="previewImg_' + i + '" class="imgCont"><img src="./assets/img/' + this.sliderImages[i].img + '" alt="Immagine ' + i + ' della preview"></div>';
+        document.getElementById("previewImg_" + i).style.height = "" + 100 / this.sliderImages.length + "%";
       }
     },
     MouseWheelScroll(event) {
