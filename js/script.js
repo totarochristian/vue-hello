@@ -124,8 +124,10 @@ const app = createApp({
       clearInterval(this.intervalSlider);
     }
   },
-  mounted() {
+  created(){
     this.UpdateSlideShowed();
+  },
+  mounted() {
     this.StartAutoCarousel();
   },
 }).mount("#app");
