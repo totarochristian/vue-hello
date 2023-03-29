@@ -11,58 +11,78 @@ const app = createApp({
       intervalSlider: 0,
       sliderImages: [
         {
-          img: "01.webp",
-          title: "Spiderman",
+          img: "1.jpg",
+          title: "Lago tra i monti",
           class: 'imgCont'
         },
         {
-          img: "02.webp",
-          title: "Ratchet & Clank",
+          img: "2.jpg",
+          title: "Montagne con nuvole",
           class: 'imgCont'
         },
         {
-          img: "03.webp",
-          title: "Bad guys",
+          img: "3.jpg",
+          title: "Cascata tra i monti",
           class: 'imgCont'
         },
         {
-          img: "04.webp",
-          title: "Gatto senza stivali",
+          img: "4.jpg",
+          title: "Montagne sul mare",
           class: 'imgCont'
         },
         {
-          img: "05.webp",
-          title: "Avengers",
+          img: "5.jpg",
+          title: "Vista da un monte",
           class: 'imgCont'
         },
         {
-          img: "collina.jpg",
-          title: "Collina con vista su Sassuolo",
+          img: "6.jpg",
+          title: "Tramonto su una laguna",
           class: 'imgCont'
         },
         {
-          img: "fuoco.jpg",
-          title: "Fuoco scoppiettante",
+          img: "7.jpg",
+          title: "Costruzioni sulla sabbia",
           class: 'imgCont'
         },
         {
-          img: "mare.jpg",
-          title: "Vista su Porto Ottiolu",
+          img: "8.jpg",
+          title: "Che caldo che fa",
           class: 'imgCont'
         },
         {
-          img: "paesaggio.jpg",
-          title: "Vista dal Colle di San Maffeo",
+          img: "9.jpg",
+          title: "Immersione nel bosco",
           class: 'imgCont'
         },
         {
-          img: "paesaggio_notturno.jpg",
-          title: "Vista sulla Sassuolo notturna",
+          img: "10.jpg",
+          title: "Fiori in Primavera",
           class: 'imgCont'
         },
         {
-          img: "panchina.jpg",
-          title: "Parco in Via delle Cave",
+          img: "11.jpg",
+          title: "Un campanile allagato",
+          class: 'imgCont'
+        },
+        {
+          img: "12.jpg",
+          title: "Palafitta tra i monti",
+          class: 'imgCont'
+        },
+        {
+          img: "13.jpg",
+          title: "Borgo tra i monti",
+          class: 'imgCont'
+        },
+        {
+          img: "14.jpg",
+          title: "Colori autunnali",
+          class: 'imgCont'
+        },
+        {
+          img: "15.jpg",
+          title: "Cavallo che si nutre tra i monti",
           class: 'imgCont'
         }
       ]
