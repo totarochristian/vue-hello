@@ -2,7 +2,7 @@ const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
-      title: "Carosello di immagini",
+      title: "Paesaggi dal mondo",
       sliderTitle: '',
       sliderImage: '',
       sliderAlt: '',
