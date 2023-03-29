@@ -12,55 +12,66 @@ const app = createApp({
       sliderImages: [
         {
           img: "01.webp",
-          title: "Spiderman"
+          title: "Spiderman",
+          class: 'imgCont'
         },
         {
           img: "02.webp",
-          title: "Ratchet & Clank"
+          title: "Ratchet & Clank",
+          class: 'imgCont'
         },
         {
           img: "03.webp",
-          title: "Bad guys"
+          title: "Bad guys",
+          class: 'imgCont'
         },
         {
           img: "04.webp",
-          title: "Gatto senza stivali"
+          title: "Gatto senza stivali",
+          class: 'imgCont'
         },
         {
           img: "05.webp",
-          title: "Avengers"
+          title: "Avengers",
+          class: 'imgCont'
         },
         {
           img: "collina.jpg",
-          title: "Collina con vista su Sassuolo"
+          title: "Collina con vista su Sassuolo",
+          class: 'imgCont'
         },
         {
           img: "fuoco.jpg",
-          title: "Fuoco scoppiettante"
+          title: "Fuoco scoppiettante",
+          class: 'imgCont'
         },
         {
           img: "mare.jpg",
-          title: "Vista su Porto Ottiolu"
+          title: "Vista su Porto Ottiolu",
+          class: 'imgCont'
         },
         {
           img: "paesaggio.jpg",
-          title: "Vista dal Colle di San Maffeo"
+          title: "Vista dal Colle di San Maffeo",
+          class: 'imgCont'
         },
         {
           img: "paesaggio_notturno.jpg",
-          title: "Vista sulla Sassuolo notturna"
+          title: "Vista sulla Sassuolo notturna",
+          class: 'imgCont'
         },
         {
           img: "panchina.jpg",
-          title: "Parco in Via delle Cave"
+          title: "Parco in Via delle Cave",
+          class: 'imgCont'
         }
       ]
     };
   },
   methods: {
     UpdatePreviewSlideShowed() {
-      document.getElementById("previewImg_" + this.sliderPrevIndex).classList.remove("activeImage");
-      document.getElementById("previewImg_" + this.sliderCurrentIndex).classList.add("activeImage");
+      this.sliderImages[this.sliderPrevIndex].class = "imgCont";
+      this.sliderImages[this.sliderCurrentIndex].class = "imgCont activeImage";
     },
     UpdateSlideShowed() {
         this.sliderImage = "./assets/img/" + this.sliderImages[this.sliderCurrentIndex].img;
