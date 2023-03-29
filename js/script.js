@@ -81,13 +81,6 @@ const app = createApp({
       else this.sliderCurrentIndex = 0;
       this.UpdateSlideShowed();
     },
-    AddPreviewImages() {
-      const preview = document.getElementsByClassName("preview")[0];
-      for (let i = 0; i < this.sliderImages.length; i++) {
-        preview.innerHTML += '<div id="previewImg_' + i + '" class="imgCont"><img src="./assets/img/' + this.sliderImages[i].img + '" alt="Immagine ' + i + ' della preview"></div>';
-        document.getElementById("previewImg_" + i).style.height = "" + 100 / this.sliderImages.length + "%";
-      }
-    },
     MouseWheelScroll(event) {
       const delta = Math.sign(event.deltaY);
       if (delta == 1) NextSlide();
@@ -101,7 +94,6 @@ const app = createApp({
     }
   },
   mounted() {
-    this.AddPreviewImages();
     this.UpdateSlideShowed();
     document.getElementById("btnPrev").addEventListener("click",this.PrevSlide);
     document.getElementById("btnNext").addEventListener("click",this.NextSlide);
