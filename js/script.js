@@ -106,8 +106,8 @@ const app = createApp({
   },
   mounted() {
     this.UpdateSlideShowed();
-
-    window.addEventListener("load",this.StartAutoCarousel);
+    this.StartAutoCarousel();
+    
     document.getElementById("carousel").addEventListener("mouseout",this.StartAutoCarousel);
     document.getElementById("carousel").addEventListener("mouseover",this.StopAutoCarousel);
   },
